@@ -149,13 +149,18 @@
     background: blue;
 }
 /* --------------- /site --------------- */
-
+h2{
+    font: 24px 'Open Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    color: #000;
+}
 /* --------------- advantages --------------- */
 .advantages{
     text-align: center;
     background: #f4f4f4;
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 53px;
 }
 .advantages__wrap{
     position: relative;
@@ -171,19 +176,63 @@
     display: inline-block;
     text-align: center;
     vertical-align: top;
-    margin-left: 40px;
+    margin-left: 22px;
 
 }
 .advantages__wrap span{
     display: block;
-    font: 14px 'PT Sans', sans-serif;
-    font-weight: normal;
+    font: 14px 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-top: -8px;
+}
+.advantages__wrap span:last-child{
+    line-height: 16px;
 }
 .advantages-icon{
     height: 70px;
 }
 /* --------------- /advantages --------------- */
-
+/* -------------- press-center --------------- */
+.press-center{
+    position: relative;
+    width:960px;
+    margin:0 auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 53px;
+    font-size: 14px;
+    color:#fff;
+}
+.press-center time{
+    padding: 10px 27px;
+    line-height: 37px;
+    background-color: #ffd100;
+}
+.swiper-container{
+   position: relative;
+   width: 960px;
+   margin: 23px auto;
+}
+.swiper__content{
+    text-align: left;
+    width: 480px;
+    height: 191px;
+    float:left;
+}
+.swiper-slide{
+    background-size: contain;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    top: 64%;
+    width: 11px;
+    height: 21px;
+    background: url("../img/img_arrows.png") no-repeat 0 0;
+}
+.swiper-button-next{
+    background-position: -12px 0;
+}
+/* -------------- /press-center --------------- */
 /* --------------- logo --------------- */
 .logo {
     position: absolute;
