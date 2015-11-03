@@ -151,16 +151,16 @@
 /* --------------- /site --------------- */
 h2{
     font: 24px 'Open Sans', sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.7px;
+    font-weight: 600;
+    letter-spacing: 1px;
     color: #000;
 }
 /* --------------- advantages --------------- */
 .advantages{
     text-align: center;
     background: #f4f4f4;
-    padding-top: 30px;
-    padding-bottom: 53px;
+    padding-top: 33px;
+    padding-bottom: 49px;
 }
 .advantages__wrap{
     position: relative;
@@ -176,7 +176,7 @@ h2{
     display: inline-block;
     text-align: center;
     vertical-align: top;
-    margin-left: 22px;
+    margin-left: 21px;
 
 }
 .advantages__wrap span{
@@ -198,33 +198,59 @@ h2{
     width:960px;
     margin:0 auto;
     text-align: center;
-    padding-top: 30px;
+    margin-top: 3px;
     padding-bottom: 53px;
     font-size: 14px;
     color:#fff;
 }
+.press-center h2{
+    margin-top: 16px;
+}
 .press-center time{
-    padding: 10px 27px;
-    line-height: 37px;
+    color: #000;
+    padding: 8px 21px;
+    line-height: 29px;
     background-color: #ffd100;
+    margin-bottom: 20px;
+    font-size: 12px;
 }
 .swiper-container{
    position: relative;
    width: 960px;
-   margin: 23px auto;
+   margin: 10px auto;
 }
 .swiper__content{
+    opacity: 1;
     text-align: left;
     width: 480px;
     height: 191px;
     float:left;
+}
+.swiper__content:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.swiper__content span{
+    display: block;
+    margin:17px 0 20px 20px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.swiper__content h3{
+    margin:20px 0 13px 20px;
+}
+.swiper__content p{
+    margin-left: 20px;
+    line-height: 21px;
 }
 .swiper-slide{
     background-size: contain;
 }
 .swiper-button-prev,
 .swiper-button-next{
-    top: 64%;
+    top: 59%;
+    margin-left: -8px;
+    margin-right: -8px;
     width: 11px;
     height: 21px;
     background: url("../img/img_arrows.png") no-repeat 0 0;
