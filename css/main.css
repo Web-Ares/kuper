@@ -51,7 +51,6 @@
 }
 .site__header {
     position: relative;
-    height: 78px;
     background-color: #f1f1f1;
     z-index: 3;
 }
@@ -67,11 +66,15 @@
 .site__header-layout{
     position: relative;
     width: 960px;
+    height: 78px;
     margin: 0 auto;
+    padding-top: 11px;
+    padding-left: 204px;
 }
 .site__header-layout > span{
     font-size: 24px;
     font-weight: 600;
+    letter-spacing: 1.1px;
 }
 .site__header-callback{
     position: absolute;
@@ -92,6 +95,44 @@
 }
 .site__header-callback span:hover{
     border-bottom-color: transparent;
+}
+.site__header-language{
+    position: absolute;
+    right: -3px;
+    bottom: 0;
+    height: 33px;
+    padding-top: 6px;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #4e4e4e;
+    text-transform: uppercase;
+    letter-spacing: -.4px;
+    background: #b9b9b9;
+    background: -moz-linear-gradient(left,  #b9b9b9 0%, #dadada 6%, #f1f1f1 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#b9b9b9), color-stop(6%,#dadada), color-stop(100%,#f1f1f1));
+    background: -webkit-linear-gradient(left,  #b9b9b9 0%,#dadada 6%,#f1f1f1 100%);
+    background: -o-linear-gradient(left,  #b9b9b9 0%,#dadada 6%,#f1f1f1 100%);
+    background: -ms-linear-gradient(left,  #b9b9b9 0%,#dadada 6%,#f1f1f1 100%);
+    background: linear-gradient(to right,  #b9b9b9 0%,#dadada 6%,#f1f1f1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9b9b9', endColorstr='#f1f1f1',GradientType=1 );
+}
+.site__header-language a{
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    padding: 2px;
+    color: #4e4e4e;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color .3s ease;
+    -webkit-transition: border-bottom-color .3s ease;
+}
+.site__header-language a:hover{
+    border-bottom-color: #4e4e4e;
+}
+.site__header-language .active{
+    background-color: #feffff;
+    border-bottom: none;
+    cursor: default;
 }
 .site__footer {
     z-index: 2;
@@ -116,3 +157,45 @@
     left: -11px;
 }
 /* --------------- /logo --------------- */
+
+/* -------- header__menu -------------- */
+.header__menu{
+    position: absolute;
+    left: 193px;
+    bottom: 0;
+    font-size: 16px;
+}
+.header__menu a{
+    position: relative;
+    float: left;
+    height: 33px;
+    padding: 6px 15px 0;
+    border-left: 1px solid #fff;
+    color: #4e4e4e;
+    z-index: 2;
+}
+.header__menu a:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    border-bottom:2px solid #f3bb00;
+    background-color: #ffea80;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+}
+.header__menu a:hover:before{
+    opacity: 1;
+}
+.header__menu a:first-child{
+    border-left: 0;
+}
+.header__menu span{
+    position: relative;
+    z-index: 2;
+}
+/* -------- header__menu -------------- */
