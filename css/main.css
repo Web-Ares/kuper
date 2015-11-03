@@ -80,6 +80,40 @@
 }
 /* --------------- /site --------------- */
 
+/* --------------- advantages --------------- */
+.advantages{
+    text-align: center;
+    background: #f4f4f4;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.advantages__wrap{
+    position: relative;
+    width:960px;
+    margin:0 auto;
+}
+.advantages__wrap img{
+    min-height: 50px;
+}
+.advantages__wrap a{
+    color:#000;
+    margin-top: 35px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin-left: 40px;
+
+}
+.advantages__wrap span{
+    display: block;
+    font: 14px 'PT Sans', sans-serif;
+    font-weight: normal;
+}
+.advantages-icon{
+    height: 70px;
+}
+/* --------------- /advantages --------------- */
+
 /* --------------- logo --------------- */
 .logo {
     position: absolute;
