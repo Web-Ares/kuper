@@ -28,21 +28,13 @@
 }
 /* --------------- /placeholder --------------- */
 
-/* --------------- fonts --------------- */
-@font-face {
-    font-family: "Font Name";
-    src: url("../fonts/font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-/* --------------- /fonts --------------- */
-
 /* --------------- site --------------- */
 .site {
     min-height: 100%;
     min-width: 1000px;
     overflow: hidden;
     position: relative;
+    font-family: 'Open Sans', sans-serif;
     z-index: 1;
 }
 .site:after {
@@ -60,9 +52,46 @@
 .site__header {
     position: relative;
     height: 78px;
-    background: red;
+    background-color: #f1f1f1;
     z-index: 3;
-
+}
+.site__header:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    background: url("../img/bg-header.jpg") no-repeat 50% 0 #393838;
+}
+.site__header-layout{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+.site__header-layout > span{
+    font-size: 24px;
+    font-weight: 600;
+}
+.site__header-callback{
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+.site__header-callback a{
+    display: block;
+    font-size: 12px;
+    color: #fff;
+    line-height: 15px;
+}
+.site__header-callback span{
+    display: inline-block;
+    border-bottom: 1px dotted #fff;
+    transition: border-bottom-color .3s ease;
+    -webkit-transition: border-bottom-color .3s ease;
+}
+.site__header-callback span:hover{
+    border-bottom-color: transparent;
 }
 .site__footer {
     z-index: 2;
@@ -84,6 +113,6 @@
 .logo {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -11px;
 }
 /* --------------- /logo --------------- */
