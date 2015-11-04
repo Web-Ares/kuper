@@ -15,16 +15,39 @@ $(function(){
             _init = function () {
                 _addEvents();
             };
-        var swiper = new Swiper(_obj, {
-            slidesPerView: 1,
-            autoplay: 5000,
-            nextButton: _next,
-            prevButton: _prev,
-            pagination: _paginator,
-            loop: true,
-            spaceBetween: 0,
-            paginationClickable: true
-        });
+        if (_obj.hasClass('swiper-promo')){
+            var swiper = new Swiper(_obj, {
+                slidesPerView: 1,
+                autoplay: 5000,
+                pagination: _paginator,
+                loop: true,
+                paginationClickable: true
+            });
+        }
+        if (_obj.hasClass('swiper-container')){
+            var swiper = new Swiper(_obj, {
+                slidesPerView: 1,
+                loop: true,
+                autoplay: 10000
+            });
+        }
+        if (_obj.hasClass('swiper-customer')){
+            var swiper = new Swiper(_obj, {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                loop: true,
+                loopedSlides: 20,
+                coverflow: {
+                    rotate: 0,
+                    stretch: -150,
+                    depth: 450,
+                    modifier: 1,
+                    slideShadows : false
+                }
+            });
+        }
         //public properties
 
         //public methods
@@ -40,7 +63,7 @@ $(function(){
         Slider($(this));
     });
 
-    $('.swiper-container').each(function () {
+    $('.swiper-customer').each(function () {
         Slider($(this));
     });
 });
