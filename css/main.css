@@ -493,31 +493,31 @@ h2{
     display: inline-block;
     position: relative;
 }
-.contetnt__complex ul li:first-child{
+.contetnt__complex ul li:hover, .contetnt__complex ul .active{
+
     display: block;
-    height: 48px;
     background-color: #f3bb00;
     text-decoration: none;
-    padding-top: 5px;
+    -webkit-transition: 1s ease-out 0.5s;
+    transition: .4s ease-out;
+}
+
+.contetnt__complex ul li:first-child a:hover{
+    color: #000;
 }
 .contetnt__complex ul li{
     display: block;
     height: 54px;
     background-color: #f6f6f6;
     text-decoration: underline;
-    padding-left: 12px;
-    padding-top: 11px;
 }
 .contetnt__complex a{
     font-size: 13px;
-    vertical-align: middle;
+    display: block;
     color: #000;
+    padding-left: 12px;
+    padding-top: 11px;
 
 }
-.contetnt__complex a:hover{
-    color: #f3bb00;
-}
-.contetnt__complex a:first-child:hover{
-    color: #000;
-}
+
 /* --------------- /contetnt__complex --------------- */
