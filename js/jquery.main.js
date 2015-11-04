@@ -40,4 +40,7 @@ $(function(){
         Slider($(this));
     });
 
+    $('.swiper-container').each(function () {
+        Slider($(this));
+    });
 });
