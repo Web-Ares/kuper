@@ -5,11 +5,15 @@
 
 /*
     main styles
-    version: 15.01.2013
+    version: 04.11.2015
 
     placeholder
 
-    fonts
+    advantages
+
+    press-center
+
+    content
 
     site
 
@@ -295,6 +299,7 @@ h2{
     background: #fff;
     margin-left: 0;
     z-index: 2;
+    transition: opacity .5s ease;
 }
 .advantages-drop li{
     width: 30%;
@@ -362,6 +367,9 @@ h2{
     margin-bottom: 20px;
     font-size: 12px;
 }
+/* -------------- /press-center --------------- */
+
+/* -------------- /press-center swiper --------------- */
 .swiper-container{
    position: relative;
    width: 960px;
@@ -395,19 +403,8 @@ h2{
 .swiper-slide{
     background-size: contain;
 }
-.swiper-button-prev,
-.swiper-button-next{
-    top: 59%;
-    margin-left: -8px;
-    margin-right: -8px;
-    width: 11px;
-    height: 21px;
-    background: url("../img/img_arrows.png") no-repeat 0 0;
-}
-.swiper-button-next{
-    background-position: -12px 0;
-}
-/* -------------- /press-center --------------- */
+/* -------------- /press-center swiper --------------- */
+
 /* --------------- logo --------------- */
 .logo {
     position: absolute;
