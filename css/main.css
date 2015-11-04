@@ -282,6 +282,7 @@ h2{
     color: #4e4e4e;
     z-index: 2;
 }
+.header__menu a.active:before,
 .header__menu a:before{
     content: '';
     position: absolute;
@@ -295,8 +296,19 @@ h2{
     opacity: 0;
     transition: opacity .3s ease;
     -webkit-transition: opacity .3s ease;
+    -webkit-box-shadow:0 5px 11px -10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 5px 11px -10px rgba(0, 0, 0, 0.5);
+    box-shadow:0 5px 11px -10px rgba(0, 0, 0, 0.5);
 }
 .header__menu a:hover:before{
+    opacity: 1;
+}
+.header__menu a.active{
+    color: #fff;
+    cursor: default;
+}
+.header__menu a.active:before{
+    background-color: #767475;
     opacity: 1;
 }
 .header__menu a:first-child{
