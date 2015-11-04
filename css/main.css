@@ -309,13 +309,15 @@ h2{
 /* -------- header__menu -------------- */
 /* --------------- content --------------- */
 .content{
-
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 43px;
 }
 .content__textblock{
     width: 753px;
-    margin: 0 auto;
-    margin-top: 53px;
-    margin-left: 238px;
+    overflow: hidden;
+    padding-top: 3px;
+    margin-left: 210px;
 }
 /* --------------- /content --------------- */
 
@@ -371,10 +373,9 @@ h2{
     margin-top: 26px;
 }
 .product strong{
-    display: inline-block;
-    width: 309px;
     line-height: 19px;
-    margin-bottom: 13px;
+    margin-top: 12px;
+    display: block;
 }
 .product ol{
     list-style-type: decimal;
@@ -385,21 +386,29 @@ h2{
     line-height: 19px;
     width: 270px;
 }
+.product ol ul{
+    margin-left: 11px;
+    margin-top: 4px;
+    margin-bottom: -4px;
+}
 .product ul>li:before{
-    content: '-';
+    content: '- ';
+    position: absolute;
+    left: -9px;
 }
 .product p{
     margin-bottom: 5px;
+    margin-top: 10px;
     line-height: 18px;
 }
 .product ul{
     width: 709px;
-    margin-left: 24px;
+    margin-left: 26px;
     margin-bottom: 14px;
 }
 .product ul>li{
     line-height: 19px;
-
+    position: relative;
 }
 .product a{
     color: #9f7a00;
@@ -454,11 +463,18 @@ h2{
 .product table{
     font-family: 'PT Sans', sans-serif;
 }
+.product img{
+    float: right;
+    margin-bottom: 31px;
+    padding-left: 20px;
+    margin-top: 6px;
+
+}
 /* --------------- /product --------------- */
 
 /* --------------- contetnt__complex --------------- */
 .contetnt__complex{
-    width: 173px;
+    width: 175px;
     float: left;
 }
 .contetnt__complex ul{
@@ -470,16 +486,26 @@ h2{
     height: 48px;
     background-color: #f3bb00;
     text-decoration: none;
+    padding-top: 5px;
 }
 .contetnt__complex ul li{
     display: block;
-    height: 72px;
+    height: 54px;
     background-color: #f6f6f6;
     text-decoration: underline;
+    padding-left: 12px;
+    padding-top: 11px;
 }
-.contetnt__complex span{
+.contetnt__complex a{
     font-size: 13px;
     vertical-align: middle;
+    color: #000;
 
+}
+.contetnt__complex a:hover{
+    color: #f3bb00;
+}
+.contetnt__complex a:first-child:hover{
+    color: #000;
 }
 /* --------------- /contetnt__complex --------------- */
