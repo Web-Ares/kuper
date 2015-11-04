@@ -469,6 +469,23 @@ h2{
 }
 /* -------------- /press-center swiper --------------- */
 
+/* --------------- customer --------------- */
+.customer{
+    height: 401px;
+    background: url("../img/bg-customer.jpg") no-repeat center;
+}
+.customer__wrap{
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 21px;
+    text-align: center;
+}
+.customer__wrap h2{
+    text-transform: uppercase;
+    letter-spacing: -.5px;
+}
+/* --------------- customer --------------- */
+
 /* --------------- logo --------------- */
 .logo {
     position: absolute;
@@ -476,6 +493,7 @@ h2{
     left: -11px;
 }
 /* --------------- /logo --------------- */
+
 /* -------- header__menu -------------- */
 .header__menu{
     position: absolute;
@@ -529,6 +547,7 @@ h2{
     z-index: 2;
 }
 /* -------- header__menu -------------- */
+
 /* --------------- content --------------- */
 .textpage{
     width: 960px;
