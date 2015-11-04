@@ -160,7 +160,7 @@ h2{
     text-align: center;
     background: #f4f4f4;
     padding-top: 33px;
-    padding-bottom: 49px;
+    padding-bottom: 18px;
 }
 .advantages__wrap{
     position: relative;
@@ -170,26 +170,67 @@ h2{
 .advantages__wrap img{
     min-height: 50px;
 }
-.advantages__wrap a{
-    color:#000;
-    margin-top: 35px;
+.advantages__wrap li{
+    color: #000;
+    margin-top: 20px;
+    padding: 15px 10px 10px 10px;
     display: inline-block;
     text-align: center;
     vertical-align: top;
-    margin-left: 21px;
-
+    min-height: 132px;
 }
-.advantages__wrap span{
+.advantages-drop{
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 960px;
+    background: #fff;
+    margin-left: 0;
+    z-index: 2;
+}
+.advantages-drop li{
+    width: 30%;
+    margin-top: 10px;
+}
+.advantages__wrap li span{
     display: block;
     font: 14px 'Open Sans', sans-serif;
     font-weight: 700;
     margin-top: -8px;
+    padding-bottom: 15px;
 }
-.advantages__wrap span:last-child{
+.advantages-drop li span:first-child{
+    position: relative;
+    margin: 0 auto;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #f8c200;
+    font-size: 25px;
+    margin-bottom: 17px;
+}
+.advantages-drop li span:last-child{
+    font-size: 16px;
+    font-weight: 300;
+}
+.advantages__wrap li:last-child{
     line-height: 16px;
 }
 .advantages-icon{
     height: 70px;
+}
+.advantages__wrap li:hover {
+    background-color: #fff;
+
+}
+.advantages__wrap li:hover .advantages-drop{
+    opacity: 1;
+    visibility: visible;
+}
+
+.advantages-active{
+    display: block;
 }
 /* --------------- /advantages --------------- */
 /* -------------- press-center --------------- */
@@ -225,6 +266,7 @@ h2{
     width: 480px;
     height: 191px;
     float:left;
+    color:#fff;
 }
 .swiper__content:hover{
     opacity: 0.8;
