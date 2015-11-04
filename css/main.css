@@ -593,7 +593,7 @@ h2{
     border-bottom: 1px solid #605447;
 }
 .product table tr:first-child{
-    border-top: 1px solid #f6f4ef;
+    border-top: 1px solid #605447;
     background-color: #f3bb00;
     font-weight: bold;
 }
