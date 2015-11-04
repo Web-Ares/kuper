@@ -352,7 +352,7 @@ h2{
     text-align: center;
     vertical-align: top;
     min-height: 132px;
-    transition: background-color .5s ease;
+    transition: background-color .6s ease;
 }
 .advantages__drop{
     left: 0;
@@ -363,7 +363,7 @@ h2{
     background: #fff;
     margin-left: 0;
     z-index: 2;
-    transition: opacity .7s ease;
+    transition: opacity .6s ease;
 }
 .advantages__drop li{
     width: 30%;
@@ -407,6 +407,7 @@ h2{
     visibility: visible;
 }
 /* --------------- /advantages --------------- */
+
 /* -------------- press-center --------------- */
 .press-center{
     position: relative;
