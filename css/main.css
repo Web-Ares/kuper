@@ -562,14 +562,14 @@ h2{
 }
 /* --------------- /breadcrumbs --------------- */
 
-/* --------------- product --------------- */
-.product{
+/* --------------- content-wrap --------------- */
+.content-wrap{
     color:#000;
     letter-spacing: -0.2px;
     line-height: 17px;
     font-size: 13px;
 }
-.product h1{
+.content-wrap h1{
     font-size: 24px;
     line-height: 25px;
     font-weight: normal;
@@ -577,113 +577,113 @@ h2{
     font-family: 'Open Sans', sans-serif;
     word-spacing: 2px;
 }
-.product h2{
+.content-wrap h2{
     font-size: 16px;
     margin-bottom: 11px;
 }
-.product h3{
+.content-wrap h3{
     font-size: 14px;
     margin-bottom: 10px;
     margin-top: 26px;
 }
-.product strong{
+.content-wrap strong{
     line-height: 19px;
     margin-top: 12px;
 }
-.product ol{
+.content-wrap ol{
     list-style-type: decimal;
     margin-left: 29px;
     margin-bottom: 16px;
 }
-.product ol>li{
+.content-wrap ol>li{
     line-height: 19px;
     width: 270px;
 }
-.product ol ul{
+.content-wrap ol ul{
     margin-left: 11px;
     margin-top: 4px;
     margin-bottom: -4px;
 }
-.product ul>li:before{
+.content-wrap ul>li:before{
     content: '- ';
     position: absolute;
     left: -9px;
 }
-.product p{
+.content-wrap p{
     margin-bottom: 5px;
     margin-top: 10px;
     line-height: 18px;
 }
-.product ul{
+.content-wrap ul{
     width: 709px;
     margin-left: 26px;
     margin-bottom: 14px;
 }
-.product ul>li{
+.content-wrap ul>li{
     line-height: 19px;
     position: relative;
 }
-.product a{
+.content-wrap a{
     color: #9f7a00;
 }
-.product a:hover{
+.content-wrap a:hover{
     text-decoration: underline;
 }
-.product table{
+.content-wrap table{
     margin: 10px 0 20px;
     margin-bottom: 33px;
     width: 754px;
 }
-.product table th,
-.product table td{
+.content-wrap table th,
+.content-wrap table td{
     width: 181px;
     vertical-align: middle;
     padding: 4px 12px;
     font-weight: normal;
 }
-.product table tr:last-child{
+.content-wrap table tr:last-child{
     border-bottom: 1px solid #605447;
 }
-.product table tr:first-child{
+.content-wrap table tr:first-child{
     border-top: 1px solid #605447;
     background-color: #f3bb00;
     font-weight: bold;
 }
-.product table tr:first-child th, .product table tr:first-child td{
+.content-wrap table tr:first-child th, .content-wrap table tr:first-child td{
     font-weight: bold;
 }
-.product table tr{
+.content-wrap table tr{
     background-color: transparent;
     border-bottom: 1px solid #e3e3e3;
 }
-.product table td:first-child{
+.content-wrap table td:first-child{
     width: 261px;
 }
-.product table th:first-child{
+.content-wrap table th:first-child{
     width: 261px;
 }
-.product table td{
+.content-wrap table td{
     line-height: 15px;
     font-size: 12px;
 }
-.product table th{
+.content-wrap table th{
     line-height: 15px;
     font-size: 12px;
 }
-.product table tr:last-child{
+.content-wrap table tr:last-child{
     border-bottom: 1px solid #605447;
 }
-.product table{
+.content-wrap table{
     font-family: 'PT Sans', sans-serif;
 }
-.product img{
+.content-wrap img{
     float: right;
     margin-bottom: 31px;
     padding-left: 20px;
     margin-top: 6px;
 
 }
-/* --------------- /product --------------- */
+/* --------------- /content-wrap --------------- */
 
 /* --------------- contetnt__complex --------------- */
 
