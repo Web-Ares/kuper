@@ -511,12 +511,12 @@ h2{
 }
 /* -------- header__menu -------------- */
 /* --------------- content --------------- */
-.content{
+.textpage{
     width: 960px;
     margin: 0 auto;
     margin-top: 43px;
 }
-.content__textblock{
+.textpage__textblock{
     width: 753px;
     overflow: hidden;
     padding-top: 3px;
@@ -676,15 +676,15 @@ h2{
 /* --------------- /product --------------- */
 
 /* --------------- contetnt__complex --------------- */
-.contetnt__complex{
+.textpage__complex{
     width: 175px;
     float: left;
 }
-.contetnt__complex ul{
+.textpage__complex ul{
     display: inline-block;
     position: relative;
 }
-.contetnt__complex ul li:hover, .contetnt__complex ul .active{
+.textpage__complex ul li:hover, .textpage__complex ul .active{
 
     display: block;
     background-color: #f3bb00;
@@ -693,16 +693,16 @@ h2{
     transition: .4s ease-out;
 }
 
-.contetnt__complex ul li:first-child a:hover{
+.textpage__complex ul li:first-child a:hover{
     color: #000;
 }
-.contetnt__complex ul li{
+.textpage__complex ul li{
     display: block;
     height: 54px;
     background-color: #f6f6f6;
     text-decoration: underline;
 }
-.contetnt__complex a{
+.textpage__complex a{
     font-size: 13px;
     display: block;
     color: #000;
