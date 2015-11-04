@@ -259,6 +259,10 @@
 .site__footer-developer a:hover{
     border-bottom-color: transparent;
 }
+.site__aside{
+    width: 175px;
+    float: left;
+}
 /* --------------- /site --------------- */
 
 /* --------------- swiper-promo --------------- */
@@ -542,18 +546,17 @@ h2{
     font-size: 12px;
     color: #4e4e4e;
     text-decoration: underline;
+    margin-right: 14px;
 }
-.breadcrumbs a:after{
+.breadcrumbs a:first-child:after{
     content: '>';
     position: absolute;
     top: 4px;
     right: -12px;
-}
-.breadcrumbs span{
-    padding-left: 14px;
-    font-size: 12px;
     color: #4e4e4e;
-    text-decoration: underline;
+}
+.breadcrumbs a:hover{
+    color: #f3bb00;
 }
 /* --------------- /breadcrumbs --------------- */
 
@@ -584,7 +587,6 @@ h2{
 .product strong{
     line-height: 19px;
     margin-top: 12px;
-    display: block;
 }
 .product ol{
     list-style-type: decimal;
@@ -682,15 +684,11 @@ h2{
 /* --------------- /product --------------- */
 
 /* --------------- contetnt__complex --------------- */
+
 .textpage__complex{
-    width: 175px;
-    float: left;
-}
-.textpage__complex ul{
-    display: inline-block;
     position: relative;
 }
-.textpage__complex ul li:hover, .textpage__complex ul .active{
+.textpage__complex li:hover, .textpage__complex .active{
 
     display: block;
     background-color: #f3bb00;
@@ -699,10 +697,10 @@ h2{
     transition: .4s ease-out;
 }
 
-.textpage__complex ul li:first-child a:hover{
+.textpage__complex li:first-child a:hover{
     color: #000;
 }
-.textpage__complex ul li{
+.textpage__complex li{
     display: block;
     height: 54px;
     background-color: #f6f6f6;
