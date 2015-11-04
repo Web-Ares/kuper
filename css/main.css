@@ -298,7 +298,13 @@
     margin: 0 11px;
     border-radius: 50px;
     background-color: #f4f4f4;
+    transition: opacity .3s ease, background-color .3s ease;
+    -webkit-transition: opacity .3s ease, background-color .3s ease;
     opacity: 1;
+}
+.swiper-promo__pagination span:hover{
+    background-color: #ffed00;
+    opacity: .7;
 }
 span.swiper-pagination-bullet-active{
     background-color: #ffed00;
