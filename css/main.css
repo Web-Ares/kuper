@@ -256,6 +256,51 @@
     border-bottom-color: transparent;
 }
 /* --------------- /site --------------- */
+
+/* --------------- swiper-promo --------------- */
+.swiper-promo{
+    position: relative;
+    overflow: hidden;
+}
+.swiper-promo .swiper-slide{
+    height: 279px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.swiper-promo__layout{
+    width: 960px;
+    margin: 0 auto;
+    font-size: 30px;
+}
+.swiper-promo__layout h1{
+    width: 330px;
+    margin-top: 103px;
+    padding-left: 10px;
+    letter-spacing: 1.7px;
+}
+.swiper-promo__pagination{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -17px;
+    text-align: center;
+    z-index: 9;
+}
+.swiper-promo__pagination span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 11px;
+    border-radius: 50px;
+    background-color: #f4f4f4;
+    opacity: 1;
+}
+span.swiper-pagination-bullet-active{
+    background-color: #ffed00;
+}
+/* --------------- /swiper-promo --------------- */
+
 h2{
     font: 24px 'Open Sans', sans-serif;
     font-weight: 600;
