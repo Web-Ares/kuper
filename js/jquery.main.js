@@ -37,6 +37,7 @@ $(function(){
                 grabCursor: true,
                 centeredSlides: true,
                 slidesPerView: 'auto',
+                autoplay: 5000,
                 loop: true,
                 loopedSlides: 20,
                 coverflow: {
