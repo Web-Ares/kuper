@@ -321,7 +321,7 @@ h2{
 .advantages{
     text-align: center;
     background: #f4f4f4;
-    padding-top: 33px;
+    padding-top: 20px;
     padding-bottom: 18px;
 }
 .advantages__wrap{
@@ -340,8 +340,9 @@ h2{
     text-align: center;
     vertical-align: top;
     min-height: 132px;
+    transition: background-color .5s ease;
 }
-.advantages-drop{
+.advantages__drop{
     left: 0;
     position: absolute;
     opacity: 0;
@@ -350,9 +351,9 @@ h2{
     background: #fff;
     margin-left: 0;
     z-index: 2;
-    transition: opacity .5s ease;
+    transition: opacity .7s ease;
 }
-.advantages-drop li{
+.advantages__drop li{
     width: 30%;
     margin-top: 10px;
 }
@@ -362,8 +363,9 @@ h2{
     font-weight: 700;
     margin-top: -8px;
     padding-bottom: 15px;
+    line-height: 15px;
 }
-.advantages-drop li span:first-child{
+.advantages__drop li span:first-child{
     position: relative;
     margin: 0 auto;
     width: 36px;
@@ -372,28 +374,25 @@ h2{
     background: #f8c200;
     font-size: 25px;
     margin-bottom: 17px;
+    line-height: 34px;
 }
-.advantages-drop li span:last-child{
+.advantages__drop li span:last-child{
     font-size: 16px;
     font-weight: 300;
+    line-height: 22px;
 }
 .advantages__wrap li:last-child{
     line-height: 16px;
 }
-.advantages-icon{
+.advantages__icon{
     height: 70px;
 }
 .advantages__wrap li:hover {
     background-color: #fff;
-
 }
-.advantages__wrap li:hover .advantages-drop{
+.advantages__wrap li:hover .advantages__drop{
     opacity: 1;
     visibility: visible;
-}
-
-.advantages-active{
-    display: block;
 }
 /* --------------- /advantages --------------- */
 /* -------------- press-center --------------- */
@@ -433,6 +432,8 @@ h2{
     height: 191px;
     float:left;
     color:#fff;
+    transition: opacity .5s ease;
+    background-size:cover;
 }
 .swiper__content:hover{
     opacity: 0.8;
