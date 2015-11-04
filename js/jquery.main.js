@@ -22,7 +22,8 @@ $(function(){
             prevButton: _prev,
             pagination: _paginator,
             loop: true,
-            spaceBetween: 0
+            spaceBetween: 0,
+            paginationClickable: true
         });
         //public properties
 
