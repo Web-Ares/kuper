@@ -1,10 +1,11 @@
 $(function(){
-        var Slider = function (obj) {
+    var Slider = function (obj) {
 
         //private properties
         var _self = this,
             _next = obj.find($('.swiper-button-next')),
             _prev = obj.find($('.swiper-button-prev')),
+            _paginator = obj.find($('.swiper-promo__pagination')),
             _obj = obj;
 
         //private methods
@@ -19,6 +20,7 @@ $(function(){
             autoplay: 5000,
             nextButton: _next,
             prevButton: _prev,
+            pagination: _paginator,
             loop: true,
             spaceBetween: 0
         });
@@ -26,43 +28,15 @@ $(function(){
 
         //public methods
 
-
         _init();
     };
+
+    $('.swiper-promo').each(function () {
+        Slider($(this));
+    });
+
     $('.swiper-container').each(function () {
         Slider($(this));
     });
-} );
 
-var Shablon = function (obj) {
-    this.obj = obj;
-
-
-    this.init();
-};
-Shablon.prototype = {
-    init: function () {
-        var self = this;
-
-        self.core = self.core();
-        self.core.build();
-    },
-    core: function () {
-        var self = this;
-
-        return {
-            addEvents: function () {
-
-            },
-            build: function () {
-                self.core.addEvents();
-            }
-        };
-    }
-};
-
-$(window).on({
-    load: function () {
-
-    }
 });
