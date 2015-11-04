@@ -266,21 +266,19 @@
     position: relative;
     overflow: hidden;
 }
-.swiper-promo .swiper-slide{
-    height: 279px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 .swiper-promo__layout{
     width: 960px;
+    height: 279px;
     margin: 0 auto;
+    padding-left: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 103px;
     font-size: 30px;
 }
 .swiper-promo__layout h1{
     width: 330px;
-    margin-top: 103px;
-    padding-left: 10px;
     letter-spacing: 1.7px;
 }
 .swiper-promo__pagination{
@@ -308,6 +306,10 @@
 }
 span.swiper-pagination-bullet-active{
     background-color: #ffed00;
+}
+span.swiper-pagination-bullet-active:hover{
+    opacity: 1;
+    cursor: default;
 }
 /* --------------- /swiper-promo --------------- */
 
