@@ -591,7 +591,8 @@ span.swiper-pagination-bullet-active:hover{
 .swiper-customer .swiper-slide{
     width: 196px;
     height: 111px;
-    background-size: cover;
+    background-color: #fff;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border: 1px solid #d5d5d5;
