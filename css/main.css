@@ -843,3 +843,69 @@ span.swiper-pagination-bullet-active:hover{
     opacity: .7;
 }
 /* --------------- /searcher --------------- */
+
+/* --------------- photo --------------- */
+.photo{
+    color: #000;
+    letter-spacing: -0.2px;
+    line-height: 17px;
+    font-size: 13px;
+}
+.photo h1{
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: normal;
+    margin-bottom: 19px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.8px;
+}
+.photo__list{
+    position: relative;
+    height: 162px;
+    width: 100%;
+    background: #f6f6f6;
+    padding-left: 19px;
+    padding-top: 16px;
+    margin-bottom: 21px;
+    overflow: hidden;
+}
+.photo__list:last-child{
+    margin-bottom: 172px;
+}
+.photo__list h2{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.6px;
+    font-weight: normal;
+}
+.photo__list h2 a{
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: underline;
+    padding-left: 8px;
+    color: #111;
+
+}
+.photo__list img{
+    margin-right: 11px;
+    padding-top: 12px;
+}
+.photo__list a:nth-child(5){
+    position: absolute;
+    margin-left: 163px;
+}
+.group{
+    width:133px;
+    height: 101px;
+}
+.photo__list a:nth-child(5):before{
+    content: "";
+    position: absolute;
+    width:133px;
+    height: 101px;
+    top: 11px;
+    left: 26px;
+    background: url(../img/photo-list-hover.png)no-repeat;
+}
+
+/* --------------- /photo --------------- */
