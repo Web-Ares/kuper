@@ -1,4 +1,5 @@
 $(function(){
+
     var Slider = function (obj) {
 
         //private properties
@@ -40,4 +41,9 @@ $(function(){
         Slider($(this));
     });
 
+    $("a.group").fancybox({
+        'transitionIn'		: 'none',
+        'transitionOut'		: 'none'
+
+    });
 });
