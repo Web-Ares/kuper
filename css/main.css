@@ -518,7 +518,8 @@ span.swiper-pagination-bullet-active:hover{
     letter-spacing: 1px;
     color: #000;
 }
-.press-center time{
+.news-list time,
+.press-cent time{
     color: #000;
     padding: 8px 21px;
     line-height: 29px;
@@ -710,6 +711,7 @@ span.swiper-pagination-bullet-active:hover{
     margin-bottom: 5px;
     margin-top: 10px;
     line-height: 18px;
+    letter-spacing: 0.8px;
 }
 .content-wrap ul{
     width: 709px;
@@ -865,7 +867,7 @@ span.swiper-pagination-bullet-active:hover{
     width: 100%;
     background: #f6f6f6;
     padding-left: 19px;
-    padding-top: 16px;
+    padding-top: 17px;
     margin-bottom: 21px;
     overflow: hidden;
 }
@@ -878,7 +880,7 @@ span.swiper-pagination-bullet-active:hover{
     letter-spacing: 0.6px;
     font-weight: normal;
 }
-.photo__list h2 a{
+.photo__list>h2>a{
     font-size: 14px;
     font-weight: 300;
     text-decoration: underline;
@@ -890,7 +892,7 @@ span.swiper-pagination-bullet-active:hover{
     margin-right: 11px;
     padding-top: 12px;
 }
-.photo__list a:nth-child(5){
+.photo__list>a:nth-child(5){
     position: absolute;
     margin-left: 163px;
 }
@@ -898,7 +900,7 @@ span.swiper-pagination-bullet-active:hover{
     width:133px;
     height: 101px;
 }
-.photo__list a:nth-child(5):before{
+.photo__list>a:nth-child(5):before{
     content: "";
     position: absolute;
     width:133px;
@@ -909,3 +911,91 @@ span.swiper-pagination-bullet-active:hover{
 }
 
 /* --------------- /photo --------------- */
+
+/* --------------- news-list --------------- */
+.news-list{
+    margin-bottom: 33px;
+}
+.news-list>time{
+    padding: 7px 21px;
+}
+.news-list>img{
+    padding-left: 30px;
+    margin-top: 0px;
+}
+.news-list>h2{
+    font-size: 16px;
+    margin-top: 9px;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+}
+.news-list>.photo{
+    float: none;
+    padding-left: 0;
+    margin-top: 5px;
+    display: block;
+}
+.pagin-list{
+    color:#7d7863;
+    font-size: 13px;
+    margin: 40px 0 39px 0;
+    width: 400px;
+}
+.pagin-first,
+.pagin-last,
+.list-prev,
+.list-next{
+    width: 22px;
+    height: 22px;
+    color: #423400;
+    background: #d5d4d4;
+    padding: 2px 12px 12px 6px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 2px;
+}
+.pagin-first,
+.list-prev{
+    background: #ebecec;
+}
+.pagin-first:hover,
+.list-prev:hover,
+.list-next:hover,
+.pagin-last:hover{
+    opacity: 0.5;
+}
+.list-navigation {
+    background: #ffd100;
+    color: #423400;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    text-align: center;
+    padding: 2px 12px 12px 8px;
+    margin: 0 2px;
+}
+.active {
+    background: #fff;
+    color: #423400;
+    text-decoration: none;
+    display: inline-block;
+}
+.pagin-list a:hover{
+    text-decoration: none;
+}
+.list-navigation:hover{
+    background: #fff;
+}
+.pagin-first{
+    margin-left: 8px;
+    padding-left: 3px;
+}
+.pagin-last{
+    padding-left: 3px;
+}
+.list-prev,
+.list-next{
+    width: 19px;
+    padding-left: 5px;
+}
+/* --------------- /news-list --------------- */
