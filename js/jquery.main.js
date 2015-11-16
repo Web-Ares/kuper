@@ -17,10 +17,7 @@ $(function(){
         Slider($(this));
     });
 
-    $("a.group").fancybox({
-     'transitionIn': 'none',
-     'transitionOut': 'none'
-     });
+    $("a[rel=index]").fancybox();
 
     $('.callback__form').submit(function () {
         $.ajax({
