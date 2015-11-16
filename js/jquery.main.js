@@ -117,7 +117,14 @@ $(function(){
         });
     });
 
-    $("a[rel=index]").fancybox();
+    $(".group").fancybox({
+        padding : 0,
+        helpers: {
+            overlay: {
+                locked: false
+            }
+        }
+    });
 });
 
 var Slider = function (obj) {
