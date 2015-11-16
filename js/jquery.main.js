@@ -115,7 +115,7 @@ var Slider = function (obj) {
     if (_obj.hasClass('swiper-gallery')){
         var _swiperGallery = new Swiper(_obj, {
             loop:true,
-            autoplay: 5000,
+            autoplay: 0,
             effect: 'fade',
             autoplayDisableOnInteraction: false,
             pagination: _paginatorGallery,
