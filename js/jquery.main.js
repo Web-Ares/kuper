@@ -79,6 +79,32 @@ $(function(){
         });
         return false;
     });
+
+    $('.proffesions__item dt').each(function(){
+        var curElem = $(this),
+            dtElem = $('.proffesions__item dt'),
+            nextElem = curElem.next('dd'),
+            ddElem = $('.proffesions__item dd');
+        $(this).on({
+            'click':function(){
+                if (nextElem.length){
+                    if(!curElem.hasClass('open')){
+                        ddElem.slideUp();
+                        dtElem.removeClass('open');
+                        curElem.addClass('open');
+                        nextElem.slideDown();
+                        return false;
+                    }
+                    else{
+                        dtElem.removeClass('open');
+                        nextElem.slideUp();
+                    }
+                }
+
+
+            }
+        });
+    });
 });
 
 var Slider = function (obj) {
