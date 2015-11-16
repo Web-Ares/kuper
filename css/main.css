@@ -928,8 +928,8 @@ span.swiper-pagination-bullet-active:hover{
     font-size: 13px;
 }
 .photo h1{
-    font-size: 24px;
     line-height: 25px;
+    font-size: 24px;
     font-weight: normal;
     margin-bottom: 19px;
     letter-spacing: 0.8px;
@@ -1010,9 +1010,10 @@ span.swiper-pagination-bullet-active:hover{
 .news-list__item>time{
     padding: 7px 21px;
 }
-.news-list__item>img{
+.news-photo-left{
+    float: right;
+    margin-bottom: 31px;
     padding-left: 30px;
-    margin-top: 0;
 }
 .news-list__item>ul{
     margin-left: 10px;
@@ -1023,9 +1024,7 @@ span.swiper-pagination-bullet-active:hover{
     line-height: 22px;
     letter-spacing: -0.5px;
 }
-.news-photo>img{
-    float: none;
-    padding-left: 0;
+.news-photo{
     margin-top: 5px;
     display: block;
 }
