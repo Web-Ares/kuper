@@ -34,6 +34,17 @@ $(function(){
         Slider($(this));
     });
 
+    $('.photo__list').each(function () {
+        $(".group").fancybox({
+            padding : 0,
+            helpers: {
+                overlay: {
+                    locked: false
+                }
+            }
+        });
+    });
+
     $('.callback__form').submit(function () {
         $.ajax({
             url: 'php/form.php',
@@ -117,14 +128,7 @@ $(function(){
         });
     });
 
-    $(".group").fancybox({
-        padding : 0,
-        helpers: {
-            overlay: {
-                locked: false
-            }
-        }
-    });
+    $("a[rel=index]").fancybox();
 });
 
 var Slider = function (obj) {

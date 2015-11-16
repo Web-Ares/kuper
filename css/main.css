@@ -15,13 +15,13 @@
 
     header__menu
 
+    swiper-container
+
     swiper-promo
 
     advantages
 
     press-center
-
-    swiper-container
 
     customer
 
@@ -34,6 +34,20 @@
     textpage__complex
 
     searcher
+
+    photo
+
+    news-list
+
+    popup
+
+    thanks-popup
+
+    address-map
+
+    contacts
+
+    proffesions
 */
 
 /* --------------- placeholder --------------- */
@@ -364,6 +378,44 @@
 }
 /* -------- /header__menu -------------- */
 
+/* -------------- swiper-container --------------- */
+.swiper-container{
+    position: relative;
+    width: 960px;
+    margin: 10px auto;
+}
+.swiper__content{
+    opacity: 1;
+    text-align: left;
+    width: 480px;
+    height: 191px;
+    float:left;
+    color:#fff;
+    transition: opacity .5s ease;
+    background-size:cover;
+}
+.swiper__content:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.swiper__content span{
+    display: block;
+    margin:17px 0 20px 20px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.swiper__content h3{
+    margin:20px 0 13px 20px;
+}
+.swiper__content p{
+    margin-left: 20px;
+    line-height: 21px;
+}
+.swiper-slide{
+    background-size: contain;
+}
+/* -------------- /swiper-container --------------- */
+
 /* --------------- swiper-promo --------------- */
 .swiper-promo{
     position: relative;
@@ -529,44 +581,6 @@ span.swiper-pagination-bullet-active:hover{
     background-color: #ffd100;
     margin-bottom: 20px;
     font-size: 12px;
-}
-/* -------------- /press-center --------------- */
-
-/* -------------- swiper-container --------------- */
-.swiper-container{
-   position: relative;
-   width: 960px;
-   margin: 10px auto;
-}
-.swiper__content{
-    opacity: 1;
-    text-align: left;
-    width: 480px;
-    height: 191px;
-    float:left;
-    color:#fff;
-    transition: opacity .5s ease;
-    background-size:cover;
-}
-.swiper__content:hover{
-    opacity: 0.8;
-    cursor: pointer;
-}
-.swiper__content span{
-    display: block;
-    margin:17px 0 20px 20px;
-    text-decoration: underline;
-    font-weight: 600;
-}
-.swiper__content h3{
-    margin:20px 0 13px 20px;
-}
-.swiper__content p{
-    margin-left: 20px;
-    line-height: 21px;
-}
-.swiper-slide{
-    background-size: contain;
 }
 /* -------------- /press-center --------------- */
 
@@ -917,9 +931,8 @@ span.swiper-pagination-bullet-active:hover{
     font-weight: normal;
     margin-bottom: 19px;
     font-family: 'Open Sans', sans-serif;
-    letter-spacing: 0.8px;
+    letter-spacing: .8px;
 }
-
 .photo__list{
     position: relative;
     height: 162px;
@@ -936,7 +949,7 @@ span.swiper-pagination-bullet-active:hover{
 .photo__list h2{
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
-    letter-spacing: 0.6px;
+    letter-spacing: .6px;
     font-weight: normal;
 }
 .photo__list>h2>a{
@@ -987,7 +1000,6 @@ span.swiper-pagination-bullet-active:hover{
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
 }
-
 /* --------------- /photo --------------- */
 
 /* --------------- news-list --------------- */
@@ -1297,7 +1309,6 @@ span.swiper-pagination-bullet-active:hover{
 .contacts__descr p{
     margin-top: 0;
     margin-bottom: 2px;
-
 }
 /* --------------- /contacts --------------- */
 
@@ -1306,7 +1317,6 @@ span.swiper-pagination-bullet-active:hover{
     margin-top: 38px;
     margin-bottom: 99px;
 }
-
 .proffesions__open-descr{
     position: absolute;
     top: 11px;
