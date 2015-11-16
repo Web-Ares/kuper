@@ -105,6 +105,7 @@ $(function(){
             }
         });
     });
+
     $("a[rel=index]").fancybox();
 });
 

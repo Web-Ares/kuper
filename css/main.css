@@ -1114,6 +1114,7 @@ span.swiper-pagination-bullet-active:hover{
     top: 2px;
 }
 /* --------------- /news-list --------------- */
+
 /* ------------------ popup ------------------- */
 .popup {
     position: fixed;
@@ -1247,6 +1248,7 @@ span.swiper-pagination-bullet-active:hover{
     background-color: #9d9e9e;
 }
 /* -------------- /thanks-popup --------------- */
+
 /* --------------- address-map --------------- */
 .address-map{
     position: relative;
