@@ -4,6 +4,7 @@ $(function(){
     $('.popup').each(function(){
         popup = new Popup($(this));
     });
+
     $('.address-map').each(function () {
         var myMap;
         function init () {
@@ -18,6 +19,7 @@ $(function(){
         }
         ymaps.ready(init);
     });
+
     $('.swiper-promo').each(function () {
         Slider($(this));
     });
@@ -125,8 +127,6 @@ $(function(){
             }
         });
     });
-
-    $("a[rel=index]").fancybox();
 });
 
 var Slider = function (obj) {
