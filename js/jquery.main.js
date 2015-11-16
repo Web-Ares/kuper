@@ -21,13 +21,15 @@ $(function(){
         Slider($(this));
     });
 
+    $('.photo__list').each(function (){
     $(".group").fancybox({
-        padding : 0,
+        padding: 0,
         helpers: {
             overlay: {
                 locked: false
             }
         }
+    });
     });
 
     $('.callback__form').submit(function () {
