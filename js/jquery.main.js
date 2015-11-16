@@ -17,10 +17,10 @@ $(function(){
         Slider($(this));
     });
 
-    /*$("a.group").fancybox({
+    $("a.group").fancybox({
      'transitionIn': 'none',
      'transitionOut': 'none'
-     });*/
+     });
 
     $('.callback__form').submit(function () {
         $.ajax({
