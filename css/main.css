@@ -520,7 +520,7 @@ span.swiper-pagination-bullet-active:hover{
     letter-spacing: 1px;
     color: #000;
 }
-.news-list time,
+.news-list__item time,
 .press-cent time{
     color: #000;
     padding: 8px 21px;
@@ -877,6 +877,7 @@ span.swiper-pagination-bullet-active:hover{
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.8px;
 }
+
 .photo__list{
     position: relative;
     height: 162px;
@@ -902,19 +903,33 @@ span.swiper-pagination-bullet-active:hover{
     text-decoration: underline;
     padding-left: 8px;
     color: #111;
-
 }
 .photo__list img{
-    margin-right: 11px;
+    width: 100%;
+    height: 100%;
     padding-top: 12px;
 }
 .photo__list>a:nth-child(5){
     position: absolute;
-    margin-left: 163px;
+    margin-left: 147px;
 }
 .group{
+    display: inline-block;
     width:133px;
     height: 101px;
+    margin-right: 11px;
+}
+.photo__list>h2>a{
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: underline;
+    padding-left: 8px;
+    color: #111;
+    width:133px;
+    height: 28px;
+}
+.photo__list>h2>a:hover{
+    text-decoration: none;
 }
 .photo__list>a:nth-child(5):before{
     content: "";
@@ -925,42 +940,50 @@ span.swiper-pagination-bullet-active:hover{
     left: 26px;
     background: url(../img/photo-list-hover.png)no-repeat;
 }
+.photo__list>a:hover{
+    opacity: 0.5;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
 
 /* --------------- /photo --------------- */
 
 /* --------------- news-list --------------- */
-.news-list{
+.news-list__item{
     margin-bottom: 33px;
 }
-.news-list>time{
+.news-list__item>time{
     padding: 7px 21px;
 }
-.news-list>img{
+.news-list__item>img{
     padding-left: 30px;
-    margin-top: 0px;
+    margin-top: 0;
 }
-.news-list>h2{
+.news-list__item>ul{
+    margin-left: 10px;
+}
+.news-list__item>h2{
     font-size: 16px;
     margin-top: 9px;
     line-height: 22px;
     letter-spacing: -0.5px;
 }
-.news-list>.photo{
+.news-photo>img{
     float: none;
     padding-left: 0;
     margin-top: 5px;
     display: block;
 }
-.pagin-list{
+.navigation{
     color:#7d7863;
     font-size: 13px;
     margin: 40px 0 39px 0;
     width: 400px;
 }
-.pagin-first,
-.pagin-last,
-.list-prev,
-.list-next{
+.navigation a:first-child,
+.navigation a:last-child,
+.navigation__prev,
+.navigation__next{
     width: 22px;
     height: 22px;
     color: #423400;
@@ -970,17 +993,17 @@ span.swiper-pagination-bullet-active:hover{
     text-align: center;
     margin: 0 2px;
 }
-.pagin-first,
-.list-prev{
+.navigation a:first-child,
+.navigation__prev{
     background: #ebecec;
 }
-.pagin-first:hover,
-.list-prev:hover,
-.list-next:hover,
-.pagin-last:hover{
+.navigation a:first-child:hover,
+.navigation__prev:hover,
+.navigation__next:hover,
+.navigation a:last-child:hover{
     opacity: 0.5;
 }
-.list-navigation {
+.navigation__item {
     background: #ffd100;
     color: #423400;
     width: 22px;
@@ -996,23 +1019,61 @@ span.swiper-pagination-bullet-active:hover{
     text-decoration: none;
     display: inline-block;
 }
-.pagin-list a:hover{
+.navigation a:hover{
     text-decoration: none;
 }
-.list-navigation:hover{
+.navigation__item:hover{
     background: #fff;
 }
-.pagin-first{
+.navigation a:first-child{
+    position: relative;
+    top: 7px;
     margin-left: 8px;
     padding-left: 3px;
 }
-.pagin-last{
+.navigation a:last-child{
+    position: relative;
+    top: 7px;
     padding-left: 3px;
 }
-.list-prev,
-.list-next{
+.navigation__prev,
+.navigation__next{
+    position: relative;
     width: 19px;
     padding-left: 5px;
+    top: 7px;
+}
+.navigation__next:before{
+    content: ">";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 6px;
+    top: 2px;
+}
+.navigation__prev:before{
+    content: "<";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 6px;
+    top: 2px;
+}
+.navigation a:last-child:before{
+    content: ">>";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 4px;
+    top: 2px;
+}
+.navigation a:first-child:before{
+    content: "<<";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 4px;
+    top: 2px;
 }
 /* --------------- /news-list --------------- */
 /* ------------------ popup ------------------- */
