@@ -22,7 +22,7 @@ $(function(){
         'transitionOut': 'none'
     });*/
 
-    $('#callback-popup__send').submit(function () {
+    $('.callback__form').submit(function () {
         $.ajax({
             url: 'php/form.php',
             dataType: 'html',
@@ -49,7 +49,7 @@ $(function(){
         return false;
     });
 
-    $('#message-popup__send').submit(function () {
+    $('.message__form').submit(function () {
         $.ajax({
             url: 'php/form.php',
             dataType: 'html',
