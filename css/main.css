@@ -781,6 +781,13 @@ span.swiper-pagination-bullet-active:hover{
     padding-left: 20px;
     margin-top: 6px;
 }
+.content-wrap .contact-photo {
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+    margin-top: 0;
+    padding: 0;
+}
 /* --------------- /content-wrap --------------- */
 
 /* --------------- textpage__complex --------------- */
@@ -999,3 +1006,50 @@ span.swiper-pagination-bullet-active:hover{
     padding-left: 5px;
 }
 /* --------------- /news-list --------------- */
+
+/* --------------- address-map --------------- */
+.address-map{
+    position: relative;
+    margin-top: 29px;
+    margin-bottom: 37px;
+}
+/* --------------- /address-map --------------- */
+
+/* --------------- contacts --------------- */
+.contacts{
+    width: 355px;
+    display: inline-block;
+    margin-bottom: 46px;
+    vertical-align: top;
+}
+.contacts-wrap{
+    margin-bottom: 134px;
+}
+.contacts:first-child{
+    display: block;
+}
+.contacts__descr{
+    overflow: hidden;
+}
+.contacts:nth-child(even){
+    margin-right: 39px;
+}
+.contacts__descr p:first-child{
+    margin-top: -4px;
+    margin-bottom: 0;
+}
+.contacts__descr i{
+    font-size: 13px;
+}
+.contacts__descr a{
+    color: #000;
+}
+.contacts__descr a:hover{
+    text-decoration: underline;
+}
+.contacts__descr p{
+    margin-top: 0;
+    margin-bottom: 2px;
+
+}
+/* --------------- /contacts --------------- */
