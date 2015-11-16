@@ -17,7 +17,7 @@ $(function(){
             };
         if (_obj.hasClass('swiper-promo')){
             var swiper = new Swiper(_obj, {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 autoplay: 5000,
                 pagination: _paginator,
                 loop: true,
@@ -36,14 +36,14 @@ $(function(){
                 effect: 'coverflow',
                 grabCursor: true,
                 centeredSlides: true,
-                slidesPerView: 'auto',
-                autoplay: 5000,
+                slidesPerView: 5,
+                autoplay: 0000,
                 loop: true,
                 loopedSlides: 20,
                 coverflow: {
                     rotate: 0,
-                    stretch: -150,
-                    depth: 450,
+                    stretch: -100,
+                    depth: 250,
                     modifier: 1,
                     slideShadows : false
                 }
