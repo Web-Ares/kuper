@@ -21,8 +21,6 @@ $(function(){
         Slider($(this));
     });
 
-    $("a[rel=index]").fancybox();
-    
     $('.callback__form').submit(function () {
         $.ajax({
             url: 'php/form.php',
@@ -102,6 +100,7 @@ $(function(){
             }
         });
     });
+    $("a[rel=index]").fancybox();
 });
 
 var Slider = function (obj) {
