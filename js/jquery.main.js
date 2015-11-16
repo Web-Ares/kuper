@@ -35,6 +35,7 @@ $(function(){
     $('.swiper-gallery').each(function () {
         Slider($(this));
     });
+
     $('.photo__list').each(function () {
         $(".group").fancybox({
             padding : 0,
@@ -45,6 +46,7 @@ $(function(){
             }
         });
     });
+
     $('.callback__form').submit(function () {
         $.ajax({
             url: 'php/form.php',
