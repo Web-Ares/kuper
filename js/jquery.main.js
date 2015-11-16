@@ -67,7 +67,6 @@ $(function(){
     $("a.group").fancybox({
         'transitionIn'		: 'none',
         'transitionOut'		: 'none'
-
     });
     $('.swiper-customer').each(function () {
         Slider($(this));

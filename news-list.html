@@ -102,13 +102,20 @@
                 <!--/breadcrumbs-->
 
                 <!--content-wrap-->
-                <article class="content-wrap">
+                <div class="content-wrap">
 
                     <h1>Пресс-центр</h1>
 
                     <!--news-list-->
-                    <div class="news-list">
-                        <img src="pic/news-list-photo.jpg" alt="News-list">
+                    <article class="news-list">
+
+                    <!--news-list__item-->
+                    <div class="news-list__item">
+
+                        <div class="news-photo-left">
+                            <img src="pic/news-list-photo.jpg" alt="News-list">
+                        </div>
+
                         <time datetime="2015-10-02">2 октября 2015</time>
                         <h2>Приглашаем на выставку Казахстанская международная выставка «Нефть и газ» в г. Алматы, Казахстан</h2>
                         <p>Уважаемые Дамы и Господа!</p>
@@ -116,46 +123,55 @@
                         <p>Вашему вниманию будет предложено энергоэффективное, инновационное насосное оборудование для эксплуатации в системе поддержания пластового давления (ППД) нефтегазовых месторождений собственного, отечественного производства на базе производственных мощностей ООО «Купер».</p>
                         <p>Будем рады видеть Вас на территории нашего стенда!</p>
                         <p>Контактный телефон, по которому Вы сможете связаться с представителями компании "Купер", участвующими в выставочном мероприятии:</p>
-                        <p>- Яруллин Ильдус +7 (917) 873-02-45</p>
-                        <p>- Бородин Антон +7 (906) 117-28-18, +7 (705) 817-68-92</p>
+                        <ul>
+                            <li>Яруллин Ильдус +7 (917) 873-02-45</li>
+                            <li>Бородин Антон +7 (906) 117-28-18, +7 (705) 817-68-92</li>
+                        </ul>
                     </div>
-                    <!--/news-list-->
+                    <!--/news-list__item-->
 
-                    <!--news-list-->
-                    <div class="news-list">
-                    <time datetime="2015-10-02">4 сентября 2015</time>
-                    <h2>С Днем нефтяника!</h2>
-                    <img class="photo" src="pic/news-list-photo1.jpg" alt="News-list">
+                    <!--news-list__item-->
+                    <div class="news-list__item">
+                        <time datetime="2015-10-02">4 сентября 2015</time>
+                        <h2>С Днем нефтяника!</h2>
+
+                        <!--news-photo-->
+                        <div class="news-photo">
+                            <img src="pic/news-list-photo1.jpg" alt="News-list">
+                        </div>
+                        <!--/news-photo-->
+
                     </div>
-                    <!--/news-list-->
+                    <!--/news-list__item-->
 
-                    <!--pagin-->
-                    <div class="pagin-list">
+                    <!--navigation-->
+                    <div class="navigation">
                         Страницы
+                        <a href="#"></a>
 
-                        <!--pagin-navigation-->
-                        <a href="#" class="pagin-first"><<</a>
-                        <!--/pagin-navigation-->
+                        <!--navigation__prev-->
+                        <a href="#" class="navigation__prev"></a>
+                        <!--/navigation__prev-->
 
-                        <!--blog-navigation-->
-                        <a href="#" class="list-prev"><</a>
+                        <!--navigation__item-->
+                        <a href="#" class="navigation__item active">1</a>
+                        <a href="#" class="navigation__item">2</a>
+                        <a href="#" class="navigation__item">3</a>
+                        <a href="#" class="navigation__item">4</a>
+                        <!--/navigation__item-->
 
-                        <a href="#" class="list-navigation active">1</a>
-                        <a href="#" class="list-navigation">2</a>
-                        <a href="#" class="list-navigation">3</a>
-                        <a href="#" class="list-navigation">4</a>
+                        <!--navigation__next-->
+                        <a href="#" class="navigation__next"></a>
+                        <!--/navigation__next-->
 
-                        <a href="#" class="list-next">></a>
-                        <!--/blog-navigation-->
-
-                        <!--pagin-navigation-->
-                        <a href="#" class="pagin-last">>></a>
-                        <!--/pagin-navigation-->
-
+                        <a href="#"></a>
                     </div>
-                    <!--/pagin-blog-->
+                    <!--/navigation-->
 
-                </article>
+                    </article>
+                    <!--/news-list-->
+
+                </div>
                 <!--/content-wrap-->
 
             </div>
