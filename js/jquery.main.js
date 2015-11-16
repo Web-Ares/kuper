@@ -82,9 +82,11 @@ var Slider = function (obj) {
 
     //private properties
     var _self = this,
+        _item = obj.find($('.swiper-slide')),
         _next = obj.find($('.swiper-button-next')),
         _prev = obj.find($('.swiper-button-prev')),
         _paginator = obj.find($('.swiper-promo__pagination')),
+        _paginatorGallery = obj.find($('.swiper-gallery_pagination')),
         _obj = obj;
 
     //private methods
@@ -116,7 +118,7 @@ var Slider = function (obj) {
             autoplay: 5000,
             effect: 'fade',
             autoplayDisableOnInteraction: false,
-            pagination: _paginator,
+            pagination: _paginatorGallery,
             paginationClickable: true,
             paginationBulletRender: function (i, className) {
                 var _slide = _item.eq(i),
