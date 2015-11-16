@@ -80,6 +80,10 @@ $(function(){
             dtElem = $('.proffesions__item dt'),
             nextElem = curElem.next('dd'),
             ddElem = $('.proffesions__item dd');
+        if(curElem.hasClass('open')){
+            curElem.addClass('open');
+            nextElem.slideDown();
+        }
         $(this).on({
             'click':function(){
                 if (nextElem.length){
@@ -88,6 +92,7 @@ $(function(){
                         dtElem.removeClass('open');
                         curElem.addClass('open');
                         nextElem.slideDown();
+
                         return false;
                     }
                     else{
