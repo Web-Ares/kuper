@@ -656,6 +656,7 @@ span.swiper-pagination-bullet-active:hover{
     color: #4e4e4e;
     text-decoration: underline;
     margin-right: 14px;
+    cursor: pointer;
 }
 .breadcrumbs a:first-child:after{
     content: '>';
@@ -666,6 +667,9 @@ span.swiper-pagination-bullet-active:hover{
 }
 .breadcrumbs a:hover{
     color: #f3bb00;
+    -webkit-transition: color .3s ease-out;
+    transition: color .3s ease-out;
+
 }
 /* --------------- /breadcrumbs --------------- */
 
@@ -1253,6 +1257,7 @@ span.swiper-pagination-bullet-active:hover{
 .address-map{
     position: relative;
     margin-top: 29px;
+    height: 458px;
     margin-bottom: 37px;
 }
 /* --------------- /address-map --------------- */
