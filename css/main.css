@@ -1296,7 +1296,8 @@ span.swiper-pagination-bullet-active:hover{
 
 /* --------------- proffesions --------------- */
 .proffesions{
-
+    margin-top: 38px;
+    margin-bottom: 99px;
 }
 
 .proffesions__open-descr{
@@ -1319,13 +1320,47 @@ span.swiper-pagination-bullet-active:hover{
     background-color: #f6f6f6;
     position: relative;
 }
-.proffesions__title{
+.proffesions__item dt{
     height: 34px;
     padding-top: 8px;
+    position: relative;
     padding-left: 23px;
     background-color: #e0e0e0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    cursor: pointer;
 }
-.proffesions__descr{
+.proffesions__item dt:before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 6px;
+    right: 18px;
+    top: 16px;
+    background: url("../img/arrow.png") no-repeat top;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transition: transform .3s ease;
+    -webkit-transition: transform .3s ease;
+}
+.proffesions__item .open:before{
+    top: 14px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transition: transform .3s ease;
+    -webkit-transition: transform .3s ease;
+}
+.proffesions__item .open{
+    background-color: #fed10b;
+}
+.proffesions__item dd{
     display: none;
+    margin-left: 23px;
+    padding-bottom: 1px;
+    margin-bottom: 26px;
+}
+.proffesions__item dd p{
+    margin-top: 0;
 }
 /* --------------- /proffesions --------------- */
