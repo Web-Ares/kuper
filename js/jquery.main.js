@@ -88,8 +88,6 @@ $(function(){
             'click':function(){
                 if (nextElem.length){
                     if(!curElem.hasClass('open')){
-                        ddElem.slideUp();
-                        dtElem.removeClass('open');
                         curElem.addClass('open');
                         nextElem.slideDown();
 
