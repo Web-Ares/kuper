@@ -17,11 +17,12 @@ $(function(){
         Slider($(this));
     });
 
-    $("a[rel=index]").fancybox();
     $('.swiper-gallery').each(function () {
         Slider($(this));
     });
 
+    $("a[rel=index]").fancybox();
+    
     $('.callback__form').submit(function () {
         $.ajax({
             url: 'php/form.php',
