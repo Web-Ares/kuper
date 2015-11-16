@@ -704,7 +704,6 @@ span.swiper-pagination-bullet-active:hover{
 }
 .content-wrap ol>li{
     line-height: 19px;
-    width: 270px;
 }
 .content-wrap ol ul{
     margin-left: 11px;
@@ -1255,3 +1254,39 @@ span.swiper-pagination-bullet-active:hover{
 
 }
 /* --------------- /contacts --------------- */
+
+/* --------------- proffesions --------------- */
+.proffesions{
+
+}
+
+.proffesions__open-descr{
+    position: absolute;
+    top: 11px;
+    right: 20px;
+    width: 12px;
+    height: 12px;
+    background: url("../img/arrow.png") no-repeat top;
+    transition: transform .3s ease;
+    -webkit-transition: transform .3s ease;
+    z-index: 9;
+    cursor: pointer;
+}
+.proffesions__close-descr{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.proffesions__item{
+    background-color: #f6f6f6;
+    position: relative;
+}
+.proffesions__title{
+    height: 34px;
+    padding-top: 8px;
+    padding-left: 23px;
+    background-color: #e0e0e0;
+}
+.proffesions__descr{
+    display: none;
+}
+/* --------------- /proffesions --------------- */
