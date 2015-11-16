@@ -23,6 +23,8 @@
 
     press-center
 
+    swiper-container
+
     customer
 
     textpage
@@ -574,7 +576,7 @@ span.swiper-pagination-bullet-active:hover{
     color: #000;
 }
 .news-list__item time,
-.press-cent time{
+.press-center time{
     color: #000;
     padding: 8px 21px;
     line-height: 29px;
@@ -926,12 +928,11 @@ span.swiper-pagination-bullet-active:hover{
     font-size: 13px;
 }
 .photo h1{
-    font-size: 24px;
     line-height: 25px;
+    font-size: 24px;
     font-weight: normal;
     margin-bottom: 19px;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: .8px;
+    letter-spacing: 0.8px;
 }
 .photo__list{
     position: relative;
@@ -995,7 +996,7 @@ span.swiper-pagination-bullet-active:hover{
     left: 26px;
     background: url(../img/photo-list-hover.png)no-repeat;
 }
-.photo__list>a:hover{
+.photo__list a:hover{
     opacity: 0.5;
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
@@ -1009,9 +1010,10 @@ span.swiper-pagination-bullet-active:hover{
 .news-list__item>time{
     padding: 7px 21px;
 }
-.news-list__item>img{
+.news-photo-left{
+    float: right;
+    margin-bottom: 31px;
     padding-left: 30px;
-    margin-top: 0;
 }
 .news-list__item>ul{
     margin-left: 10px;
@@ -1022,9 +1024,7 @@ span.swiper-pagination-bullet-active:hover{
     line-height: 22px;
     letter-spacing: -0.5px;
 }
-.news-photo>img{
-    float: none;
-    padding-left: 0;
+.news-photo{
     margin-top: 5px;
     display: block;
 }

@@ -35,16 +35,7 @@ $(function(){
     $('.swiper-gallery').each(function () {
         Slider($(this));
     });
-    $('.photo__list').each(function () {
-        $(".group").fancybox({
-            padding : 0,
-            helpers: {
-                overlay: {
-                    locked: false
-                }
-            }
-        });
-    });
+
     $('.callback__form').submit(function () {
         $.ajax({
             url: 'php/form.php',
@@ -97,6 +88,17 @@ $(function(){
             }
         });
         return false;
+    });
+
+    $('.photo__list').each(function (){
+        $(".group").fancybox({
+            padding: 0,
+            helpers: {
+                overlay: {
+                    locked: false
+                }
+            }
+        });
     });
 
     $('.proffesions__item dt').each(function(){
