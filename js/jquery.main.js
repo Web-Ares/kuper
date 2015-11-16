@@ -5,6 +5,21 @@ $(function(){
         popup = new Popup($(this));
     });
 
+    $('.address-map').each(function () {
+        var myMap;
+        function init () {
+            myMap = new ymaps.Map('map', {
+                center: $('.address-map').attr('data-coord').split(', '),
+                zoom: 16
+            });
+            myMap.controls
+                .add('zoomControl', { left: 5, top: 5 })
+                .add('typeSelector')
+                .add('mapTools', { left: 35, top: 5 });
+        }
+        ymaps.ready(init);
+    });
+
     $('.swiper-promo').each(function () {
         Slider($(this));
     });
@@ -85,15 +100,46 @@ $(function(){
         });
         return false;
     });
+
+    $('.proffesions__item dt').each(function(){
+        var curElem = $(this),
+            dtElem = $('.proffesions__item dt'),
+            nextElem = curElem.next('dd'),
+            ddElem = $('.proffesions__item dd');
+        if(curElem.hasClass('open')){
+            curElem.addClass('open');
+            nextElem.slideDown();
+        }
+        $(this).on({
+            'click':function(){
+                if (nextElem.length){
+                    if(!curElem.hasClass('open')){
+                        curElem.addClass('open');
+                        nextElem.slideDown();
+
+                        return false;
+                    }
+                    else{
+                        dtElem.removeClass('open');
+                        nextElem.slideUp();
+                    }
+                }
+
+
+            }
+        });
+    });
 });
 
 var Slider = function (obj) {
 
     //private properties
     var _self = this,
+        _item = obj.find($('.swiper-slide')),
         _next = obj.find($('.swiper-button-next')),
         _prev = obj.find($('.swiper-button-prev')),
         _paginator = obj.find($('.swiper-promo__pagination')),
+        _paginatorGallery = obj.find($('.swiper-gallery_pagination')),
         _obj = obj;
 
     //private methods
@@ -122,10 +168,10 @@ var Slider = function (obj) {
     if (_obj.hasClass('swiper-gallery')){
         var _swiperGallery = new Swiper(_obj, {
             loop:true,
-            autoplay: 5000,
+            autoplay: 0,
             effect: 'fade',
             autoplayDisableOnInteraction: false,
-            pagination: _paginator,
+            pagination: _paginatorGallery,
             paginationClickable: true,
             paginationBulletRender: function (i, className) {
                 var _slide = _item.eq(i),
