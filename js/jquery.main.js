@@ -21,8 +21,15 @@ $(function(){
         Slider($(this));
     });
 
-    $("a[rel=index]").fancybox();
-    
+    $(".group").fancybox({
+        padding : 0,
+        helpers: {
+            overlay: {
+                locked: false
+            }
+        }
+    });
+
     $('.callback__form').submit(function () {
         $.ajax({
             url: 'php/form.php',
