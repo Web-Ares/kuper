@@ -430,7 +430,8 @@ span.swiper-pagination-bullet-active:hover{
     text-align: center;
     vertical-align: top;
     min-height: 132px;
-    transition: background-color .6s ease;
+    transition: background-color .5s ease;
+    -webkit-transition: background-color .5s ease;
 }
 .advantages__drop{
     left: 0;
@@ -441,7 +442,8 @@ span.swiper-pagination-bullet-active:hover{
     background: #fff;
     margin-left: 0;
     z-index: 2;
-    transition: opacity .6s ease;
+    transition: opacity .4s ease, visibility .4s ease;
+    -webkit-transition: opacity .4s ease, visibility .4s ease;
 }
 .advantages__drop li{
     width: 30%;
@@ -559,7 +561,7 @@ span.swiper-pagination-bullet-active:hover{
     background: url("../img/bg-customer.jpg") no-repeat center;
 }
 .customer__wrap{
-    width: 903px;
+    /*width: 915px;*/
     margin: 0 auto;
     padding-top: 21px;
     text-align: center;
@@ -575,34 +577,42 @@ span.swiper-pagination-bullet-active:hover{
 }
 .swiper-customer{
     margin: 0 auto;
+    width: 960px;
+    overflow: hidden;
 }
 .swiper-customer .swiper-slide{
     width: 196px;
     height: 111px;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #fff;
     border: 1px solid #d5d5d5;
     -webkit-filter: url(#blur);
     filter: url(#blur);
     -webkit-filter: blur(2px);
     filter: blur(2px);
     filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
-    transition: filter .3s ease;
-    -webkit-transition: filter .3s ease;
+    opacity: 0.9;
+
 }
-.swiper-customer .swiper-slide-prev{
-    position: relative;
-    left: 35px;
-}
+.swiper-customer .swiper-slide-prev,
 .swiper-customer .swiper-slide-next{
-    position: relative;
-    left: -35px;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='1');
+    opacity: 1;
+    visibility: visible;
 }
 .swiper-customer .swiper-slide-active{
     -webkit-filter: blur(0);
     filter: blur(0);
     filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+    opacity: 1;
+    visibility: visible;
+}
+.swiper-customer .swiper-slide-next+div{
+    visibility: visible;
 }
 /* --------------- /customer --------------- */
 
