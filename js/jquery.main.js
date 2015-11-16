@@ -28,7 +28,7 @@ $(function(){
         Slider($(this));
     });
 
-    $('.swiper-customer').each(function () {
+    $('.swiper-custome-r').each(function () {
         Slider($(this));
     });
 
@@ -114,11 +114,9 @@ $(function(){
                     if(!curElem.hasClass('open')){
                         curElem.addClass('open');
                         nextElem.slideDown();
-
-                        return false;
                     }
                     else{
-                        dtElem.removeClass('open');
+                        curElem.removeClass('open');
                         nextElem.slideUp();
                     }
                 }
