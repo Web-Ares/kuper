@@ -974,6 +974,7 @@ span.swiper-pagination-bullet-active:hover{
     width:133px;
     height: 101px;
     margin-right: 11px;
+    margin-top: 10px;
 }
 .photo__list>h2>a{
     font-size: 14px;
@@ -1081,13 +1082,13 @@ span.swiper-pagination-bullet-active:hover{
 }
 .navigation a:first-child{
     position: relative;
-    top: 7px;
+    top: 0;
     margin-left: 8px;
     padding-left: 3px;
 }
 .navigation a:last-child{
     position: relative;
-    top: 7px;
+    top: 0;
     padding-left: 3px;
 }
 .navigation__prev,
@@ -1095,39 +1096,7 @@ span.swiper-pagination-bullet-active:hover{
     position: relative;
     width: 19px;
     padding-left: 5px;
-    top: 7px;
-}
-.navigation__next:before{
-    content: ">";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    left: 6px;
-    top: 2px;
-}
-.navigation__prev:before{
-    content: "<";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    left: 6px;
-    top: 2px;
-}
-.navigation a:last-child:before{
-    content: ">>";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    left: 4px;
-    top: 2px;
-}
-.navigation a:first-child:before{
-    content: "<<";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    left: 4px;
-    top: 2px;
+    top: 0;
 }
 /* --------------- /news-list --------------- */
 
