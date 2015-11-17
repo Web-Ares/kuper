@@ -100,32 +100,33 @@ $(function(){
             }
         });
     });
-
-    $('.proffesions__item dt').each(function(){
+var slidedown=$('.proffesions__item dt');
+    slidedown.each(function(){
         var curElem = $(this),
-            dtElem = $('.proffesions__item dt'),
-            nextElem = curElem.next('dd'),
-            ddElem = $('.proffesions__item dd');
+            nextElem = curElem.next('dd');
         if(curElem.hasClass('open')){
-            curElem.addClass('open');
             nextElem.slideDown();
         }
-        $(this).on({
-            'click':function(){
-                if (nextElem.length){
-                    if(!curElem.hasClass('open')){
-                        curElem.addClass('open');
-                        nextElem.slideDown();
-                    }
-                    else{
-                        curElem.removeClass('open');
-                        nextElem.slideUp();
-                    }
+
+    });
+    slidedown.on({
+        'click':function(){
+            var curElem = $(this),
+                nextElem = curElem.next('dd');
+
+            if (nextElem.length){
+                if(!curElem.hasClass('open')){
+                    curElem.addClass('open');
+                    nextElem.slideDown();
                 }
-
-
+                else{
+                    curElem.removeClass('open');
+                    nextElem.slideUp();
+                }
             }
-        });
+
+
+        }
     });
 });
 
