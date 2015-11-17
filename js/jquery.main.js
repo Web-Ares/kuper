@@ -36,6 +36,17 @@ $(function(){
         Slider($(this));
     });
 
+    $('.photo__list').each(function () {
+        $(".group").fancybox({
+            padding : 0,
+            helpers: {
+                overlay: {
+                    locked: false
+                }
+            }
+        });
+    });
+
     $('.callback__form').submit(function () {
         $.ajax({
             url: 'php/form.php',
@@ -90,17 +101,7 @@ $(function(){
         return false;
     });
 
-    $('.photo__list').each(function (){
-        $(".group").fancybox({
-            padding: 0,
-            helpers: {
-                overlay: {
-                    locked: false
-                }
-            }
-        });
-    });
-var slidedown=$('.proffesions__item dt');
+    var slidedown=$('.proffesions__item dt');
     slidedown.each(function(){
         var curElem = $(this),
             nextElem = curElem.next('dd');
