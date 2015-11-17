@@ -28,12 +28,16 @@ $(function(){
         Slider($(this));
     });
 
-    $('.swiper-custome-r').each(function () {
+    $('.swiper-customer').each(function () {
         Slider($(this));
     });
 
     $('.swiper-gallery').each(function () {
         Slider($(this));
+    });
+
+    $('.proffesions__item dt').each(function () {
+        Slidedown($(this));
     });
 
     $('.photo__list').each(function () {
@@ -101,33 +105,41 @@ $(function(){
         return false;
     });
 
-    var slidedown=$('.proffesions__item dt');
-    slidedown.each(function(){
-        var curElem = $(this),
-            nextElem = curElem.next('dd');
-        if(curElem.hasClass('open')){
-            nextElem.slideDown();
-        }
+});
 
-    });
-    slidedown.on({
-        'click':function(){
-            var curElem = $(this),
-                nextElem = curElem.next('dd');
+var Slidedown = function (obj) {
+    //private properties
+    var _self = this,
+        _nextElem = obj.next('dd'),
+        _obj = obj;
 
-            if (nextElem.length){
-                if(!curElem.hasClass('open')){
-                    curElem.addClass('open');
-                    nextElem.slideDown();
-                }
-                else{
-                    curElem.removeClass('open');
-                    nextElem.slideUp();
-                }
+    //private methods
+    var _addEvents = function () {
+            if(_obj.hasClass('open')){
+                _nextElem.slideDown();
             }
+            _obj.on({
+                'click':function(){
+                    if (_nextElem.length){
+                        if(!_obj.hasClass('open')){
+                            _obj.addClass('open');
+                            _nextElem.slideDown();
+                        }
+                        else{
+                            _obj.removeClass('open');
+                            _nextElem.slideUp();
+                        }
+                    }
+                }
+            });
+        },
+        _init = function () {
+            _addEvents();
+        };
 
 
-        }
+            }
+        });
     });
 });
 
