@@ -137,11 +137,12 @@ var Slidedown = function (obj) {
             _addEvents();
         };
 
+    //public properties
 
-            }
-        });
-    });
-});
+    //public methods
+
+    _init();
+};
 
 var Slider = function (obj) {
 
