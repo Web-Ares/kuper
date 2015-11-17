@@ -28,12 +28,16 @@ $(function(){
         Slider($(this));
     });
 
-    $('.swiper-custome-r').each(function () {
+    $('.swiper-customer').each(function () {
         Slider($(this));
     });
 
     $('.swiper-gallery').each(function () {
         Slider($(this));
+    });
+
+    $('.proffesions__item dt').each(function () {
+        Slidedown($(this));
     });
 
     $('.photo__list').each(function () {
@@ -101,33 +105,44 @@ $(function(){
         return false;
     });
 
-    $('.proffesions__item dt').each(function(){
-        var curElem = $(this),
-            dtElem = $('.proffesions__item dt'),
-            nextElem = curElem.next('dd'),
-            ddElem = $('.proffesions__item dd');
-        if(curElem.hasClass('open')){
-            curElem.addClass('open');
-            nextElem.slideDown();
-        }
-        $(this).on({
-            'click':function(){
-                if (nextElem.length){
-                    if(!curElem.hasClass('open')){
-                        curElem.addClass('open');
-                        nextElem.slideDown();
-                    }
-                    else{
-                        curElem.removeClass('open');
-                        nextElem.slideUp();
+});
+
+var Slidedown = function (obj) {
+    //private properties
+    var _self = this,
+        _nextElem = obj.next('dd'),
+        _obj = obj;
+
+    //private methods
+    var _addEvents = function () {
+            if(_obj.hasClass('open')){
+                _nextElem.slideDown();
+            }
+            _obj.on({
+                'click':function(){
+                    if (_nextElem.length){
+                        if(!_obj.hasClass('open')){
+                            _obj.addClass('open');
+                            _nextElem.slideDown();
+                        }
+                        else{
+                            _obj.removeClass('open');
+                            _nextElem.slideUp();
+                        }
                     }
                 }
+            });
+        },
+        _init = function () {
+            _addEvents();
+        };
 
+    //public properties
 
-            }
-        });
-    });
-});
+    //public methods
+
+    _init();
+};
 
 var Slider = function (obj) {
 
