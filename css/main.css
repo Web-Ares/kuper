@@ -674,12 +674,15 @@ span.swiper-pagination-bullet-active:hover{
     margin-right: 14px;
     cursor: pointer;
 }
-.breadcrumbs a:first-child:after{
+.breadcrumbs a:before{
     content: '>';
     position: absolute;
     top: 4px;
-    right: -12px;
+    left: -10px;
     color: #4e4e4e;
+}
+.breadcrumbs a:first-child:before{
+    display: none;
 }
 .breadcrumbs a:hover{
     color: #f3bb00;
